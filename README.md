@@ -17,9 +17,9 @@ First of all, you need to download pre-trained ImageNet VGG-19 network. The file
 
 It will transfer style from Starry Night to Rose. You can try another style and content modifying 'meta' variable in main.py.
 
-![content](resource/rose.jpg =x200)
-![style](resource/starry_night.jpg =x200)
-![result](result/result_step_final.png =x200)
+![content](resource/rose.jpg =200x150)
+![style](resource/starry_night.jpg =200x150)
+![result](result/result_step_final.png =200x150)
 
 # Reference
 
