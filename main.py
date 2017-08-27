@@ -236,3 +236,12 @@ for _ in range(meta.TRAINING_STEP):
 		saver.save(sess, meta.SAVEFILE, global_step=global_step)
 
 	sess.run(train, feed_dict={})
+
+# The final result
+result = sess.run(target, feed_dict={})
+result = result[0] + image_mean[0]
+result = np.clip(result, 0, 255)
+result = result.astype(np.uint8)
+scipy.misc.imsave(meta.OUTFILE.format('final'), result)
+
+print('Done.')
